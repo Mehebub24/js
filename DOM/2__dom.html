@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .mybody{
+            background-color: black;
+            color: aliceblue;
+        }
+</style>
+<body class="mybody">
+    <div class="myDiv">
+        <!-- HI this is for check nodelist -->
+        <div class="day" >Monday</div>
+        <div class="day" >Thuesday</div>
+        <div class="day" >Wednesday</div>
+        <div class="day" >Thursday</div>
+    </div>
+</body>
+<script>
+    const AllDiv = document.querySelector('.myDiv')
+    console.log(AllDiv)
+    console.log(AllDiv.children[1].innerHTML)
+    
+    for (let i = 0; i < AllDiv.children.length; i++) {
+        console.log(AllDiv.children[i].innerHTML)
+        
+    }
+
+
+    AllDiv.children[1].style.color = "green"
+    console.log(AllDiv.firstElementChild.innerHTML);
+    console.log(AllDiv.lastElementChild.innerHTML);
+
+    // queryselector also select first div 
+    const dayone = document.querySelector('.day')
+    console.log(dayone.innerHTML);
+    console.log(dayone.parentElement);
+    console.log("NODES: ", AllDiv.childNodes);
+</script>
+</html>

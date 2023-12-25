@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My name is Mehebub</title>
+</head>
+<style>
+    body{
+        background: #212121;
+        color: aliceblue;
+    }
+</style>
+<body>
+        <ul class="language">
+            <li class="">Javascript</li>
+        </ul>
+</body>
+<script>
+    // --------------- Add element --------------- //
+   //1st method
+    function addlanguage(LnagName){
+        const li = document.createElement("li")
+        li.innerHTML = `${LnagName}`
+        document.querySelector(".language").appendChild(li)
+    }
+    addlanguage("java")
+    addlanguage("python")
+    addlanguage("c++")
+    //2nd method
+    function addOptiLanguage(langname){
+        const li = document.createElement("li")
+        li.appendChild(document.createTextNode(langname))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptiLanguage("go lan")
+    addOptiLanguage("hi lima")
+    // --------------- Edit Eliment --------------- //
+    //1st method
+    function editfristelement(gi){
+        const fristelement = document.querySelector("li:nth-child(2)")
+        console.log(fristelement);
+        fristelement.innerHTML =`${gi}`
+    }
+    editfristelement("hi")
+    //2nd method(personali i not with this method)
+    const fristelement = document.querySelector("li:frist-child")
+    fristelement.outerHTML= "<li>Java</li>"
+    // --------------- remove --------------- //
+    const last = document.querySelector('li:last-child')
+    last.remove()
+    
+</script>
+</html>
+
+<!-- 
+addOptiLanguage() is more then optimized addlanguage() ,
+because when addlanguage function run in that time all tree are travers to add a textnode that is more time consumable but in addOptiLanguage function only add a textnode
+
+-->

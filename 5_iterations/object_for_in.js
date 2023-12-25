@@ -1,0 +1,3 @@
+const myObject ={
+    js:""
+}
