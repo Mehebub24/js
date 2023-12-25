@@ -38,16 +38,16 @@
     // --------------- Edit Eliment --------------- //
     //1st method
     function editfristelement(gi){
-        const fristelement = document.querySelector("li:nth-child(2)")
+        const fristelement = document.querySelector("li:nth-child(4)")
         console.log(fristelement);
         fristelement.innerHTML =`${gi}`
     }
     editfristelement("hi")
     //2nd method(personali i not with this method)
-    const fristelement = document.querySelector("li:frist-child")
+    const fristelement = document.querySelector("li:nth-child(3)")
     fristelement.outerHTML= "<li>Java</li>"
     // --------------- remove --------------- //
-    const last = document.querySelector('li:last-child')
+    const last = document.querySelector('li:nth-child(2)')
     last.remove()
     
 </script>
