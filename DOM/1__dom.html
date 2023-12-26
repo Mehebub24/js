@@ -16,7 +16,11 @@
     <div>
         <h1 id="hi" class="headig">DOM learing<span style="display: none;">hi lima</span></h1>
         <p>Lorem ipsum dolor sit amet.</p>
-        <input type="password" name="" id="">
+        <form>
+            <input type="text" id="firstNumber"> + <input type="text" id="secondNumber">
+            <div id="sum"></div>
+            <button>show result</button>
+        </form>
         <ul>
             <li class="list-item">one</li>
             <li class="list-item">two</li>
@@ -24,6 +28,19 @@
         </ul>
      </div>
 </body>
+<script>
+    const from = document.querySelector("form")
+    from.addEventListener("submit", function(e){
+        //this function is prevet from rerun
+        e.preventDefault()
+        const a = parseInt(document.querySelector("#firstNumber").value) 
+        const b = parseInt(document.querySelector("#secondNumber").value)
+        const sum = document.querySelector("#sum")
+        console.log(a,b);
+        const d = a + b
+        sum.innerHTML = `${d}`
+    })
+</script>
 </html>
 
 <!-- 
