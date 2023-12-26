@@ -27,7 +27,7 @@ button.forEach(function(button){
 
 ```
 
-## project 2
+## project 3
 # BMI calulator
 ```javascript
   const form = document.querySelector("form")
@@ -48,4 +48,15 @@ form.addEventListener('submit',function(e){
   }
 })
 
+```
+## project 2
+# Digital Clock
+```javascript
+const clock = document.getElementById("clock")
+
+setInterval(function(){
+let date = new Date()
+clock.innerHTML = date.toLocaleTimeString();
+
+},1000);
 ```
