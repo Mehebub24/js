@@ -27,7 +27,7 @@ button.forEach(function(button){
 
 ```
 
-## project 3
+## project 2
 # BMI calulator
 ```javascript
   const form = document.querySelector("form")
@@ -49,7 +49,7 @@ form.addEventListener('submit',function(e){
 })
 
 ```
-## project 2
+## project 3
 # Digital Clock
 ```javascript
 const clock = document.getElementById("clock")
