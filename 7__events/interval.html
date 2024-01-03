@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mehebubkalapati</title>
+</head>
+<body>
+    <h1>HelloMehebub kalapati hwo are you</h1>
+    <p>what going on </p>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+</body>
+<script>
+    const sayDate  = function(){
+        console.log(Date.now());
+    }
+    const sotpInterval = setInterval(sayDate,2000)
+    const toStop = function(){
+        clearInterval(sotpInterval)
+    }
+    document.querySelector("#stop").addEventListener("click",toStop)
+</script>
+</html>

@@ -1,2 +1,18 @@
 how to run js 
-go to chrome and check out how to work in source then snippers and ctrl+enter  
+go to chrome and check out how to work in source then snippers and ctrl+enter
+
+Default js is sychronous and single threade 
+
+execution context 
+excute one line of code at a time 
+call stack and memory block
+
+Blocking Code vs Non Blocking code
+
+Blocking cdoe 
+Block the flow of program ----> Read File Sync 
+
+Non Blocking code 
+Dose not Block execution ----> Read File Sync
+
+
