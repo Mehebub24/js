@@ -8,7 +8,7 @@
     {},
 ]
 {
-    "results": [
+    "results" ;[
       {
         "gender": "female",
         "name": {
@@ -66,10 +66,10 @@
         "nat": "US"
       }
     ],
-    "info": {
-      "seed": "56d27f4a53bd5441",
-      "results": 1,
-      "page": 1,
-      "version": "1.4"
+    "info"; {
+      "seed"; "56d27f4a53bd5441",
+      "results"; 1,
+      "page"; 1,
+      "version"; "1.4"
     }
   }
